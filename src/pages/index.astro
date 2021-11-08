@@ -8,11 +8,42 @@ import AlapLayout from '../layouts/AlapLayout.astro';
     <title>Szadakút Kft.</title>
 
     <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
-
 </head>
 <body class="bg-gray-700">
     <AlapLayout>
 
+    <section class="h-full w-full bg-white flex flex-col md:flex-row py-2 relative">
+        <div class="w-full max-w-[90%] md:w-1/2 h-auto m-4 relative">
+        <img src="/kut.jpg" alt="" class="h-full w-full rounded-sm">
+        </div>
+        <div class="max-w-[90%] md:max-w-[50%] w-full h-max flex flex-col justify-center items-center m-4 p-4 gap-4 bg-white shadow-md rounded-sm text-3xl text-gray-900">
+            <h1 class="font-bold border-b-8 pb-1 border-teal-accent-700 text-center">
+                <div class="relative">2012 óta Szada<br>egyetlen benzinkútja</div>
+            </h1>
+            <p class="text-base text-gray-900 text-center">
+            A SZADAKÚT a település ipari parkjának bejáratánál üzemel és közel egy évtizede szolgálja ki vásárlóit minőségi üzemanyagokkal, kenőanyaokkal, autóápolási cikkekkel és shop termékekkel kedvező árakon.
+            </p>
+        </div>
+    </section>
+    <section class="h-full w-full bg-szurke-logo flex justify-center items-center flex-col md:flex-row py-2 relative">
+    <div class="max-w-[90%] w-full h-max flex flex-col justify-center items-center m-4 p-4 gap-4 bg-white shadow-md rounded-sm text-gray-900">
+        <img src="/offer.svg" alt="" class="h-auto max-w-[10%] md:max-w-[5%] inline">
+        <h1 class="text-2xl font-semibold text-center">Üzemanyag vásárlási akció a Szada kúton 
+        </h1>
+        <h2 class="text-2xl font-semibold text-center">2021. november 1-től december 20-ig<br>
+        <span class="font-light text-base leading-none">minimum 10.000Ft egyszeri tankolás esetén magánszemélyként vehet részt a sorsoláson.</span>
+        </h2>
+        <h2 class="text-md text-center border-t-2 border-teal-accent-700 pt-2">A pénztárnál elhelyezett dobozba dobja be a vásárláskor kapott nyugtát, amire rá kell írni a rendszámot. 
+        </h2>
+        <ol class="text-md text-center">
+            <li class="font-semibold">FŐDÍJ: 65 liter üzemanyag</li>
+            <li>2. Díj: 45 liter üzemanyag</li>
+            <li>3. Díj: 35 liter üzemanyag</li>
+        </ol>
+        <h2 class="text-md text-center">Sorsolás: 2021. December 21-én 12 órakor a Szada kúton</h2>
+        <h3 class="text-sm font-light text-center border-t-2">A sorsolás eredményét 2022. január 31-ig kifüggesztjük az üzletben.</h3>
+    </div>
+    </section>
     </AlapLayout>
 </body>
 </html>

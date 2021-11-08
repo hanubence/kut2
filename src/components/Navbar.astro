@@ -1,10 +1,10 @@
 ---
   let page = Astro.request.url.pathname.substring(1);
 
-  let baseclass = "kapcsolat text-xs font-semibold text-szurke-logo";
-  let activeclass = "kapcsolat text-xs font-semibold text-szurke-logo border-b-2 border-teal-accent-100";
+  let baseclass = "kapcsolat font-semibold text-szurke-logo";
+  let activeclass = "kapcsolat font-semibold text-szurke-logo border-b-2 border-teal-accent-100";
 
-  let kedvezmenyek = page == "kedvezmenyek/" ? activeclass : baseclass;
+  let kedvezmenyek = page == "kedvezmenyek" ? activeclass : baseclass;
   let szolgaltatasok = page == "szolgaltatasok/" ? activeclass : baseclass;
   let kapcsolat = page == "kapcsolat/" ? activeclass : baseclass;
 ---
@@ -14,15 +14,16 @@
   <div class="w-max h-full bg-white flex px-2">
     <a href="/"><img src="/logo.svg" alt="" /></a>
   </div>
-  <div class="w-5/6 h-full bg-white flex flex-row justify-center gap-3">
+  <div class="w-full h-full bg-white flex flex-row justify-evenly text-xs sm:text-sm md:text-base">
     <a
       class={szolgaltatasok}
       href="/szolgaltatasok"
       >SZOLGÁLTATÁSOK</a
     >
     <a
+      class={kapcsolat}
       href="/kapcsolat"
-      class={kapcsolat}>KAPCSOLAT</a
+      >KAPCSOLAT</a
     >
     <a
       class={kedvezmenyek}
