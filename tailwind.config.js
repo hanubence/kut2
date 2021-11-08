@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
 				zold: {
-					base: "#62c6b2",
+					"base": "#62c6b2",
 					"base-d": "#3D9382",
 					"base-dd": "#368676",
 				},
@@ -29,6 +29,9 @@ module.exports = {
 					800: "#424242",
 					900: "#212121",
 				},
+				szurke: {
+					"logo": "#3e3e3e",
+				}
 		},
 		fontSize: {
 			'2xs': '.5rem',
