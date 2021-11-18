@@ -3,7 +3,16 @@ module.exports = {
   purge: ['./public/**/*.html', './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
-      colors: {
+		gridTemplateColumns: {
+			"ketto": '1fr 1fr',
+			"harom": '2fr 1fr 1fr'
+		},
+
+		gridTemplateRows: {
+			"ketto": '1fr 1fr',
+			"harom": '50% 1fr 1fr'
+		},
+      	colors: {
 				zold: {
 					"base": "#62c6b2",
 					"base-d": "#3D9382",
