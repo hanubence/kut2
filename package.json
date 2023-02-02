@@ -12,5 +12,8 @@
     "@astrojs/renderer-svelte": "^0.1.2",
     "astro": "^0.20.12",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "astro-seo": "^0.4.2"
   }
 }
