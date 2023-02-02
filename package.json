@@ -14,6 +14,7 @@
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "astro-seo": "^0.4.2"
+    "astro-seo": "^0.4.4",
+    "vanilla-tilt": "^1.8.0"
   }
 }

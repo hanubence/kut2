@@ -12,7 +12,4 @@ export default {
      port: 8888,             // The port to run the dev server on.
      tailwindConfig: './tailwind.config.js',     // Path to tailwind.config.js if used, e.g. './tailwind.config.js'
   },
-  renderers: [
-    "@astrojs/renderer-svelte"
-  ],
 };
